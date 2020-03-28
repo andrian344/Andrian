@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ANDRIAN PUTRA P</title>
+</head>
+
+<body>
+
+    <style>
+        h1,
+        h2,
+        p,
+        a {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: normal;
+        }
+
+        .jam-digital-malasngoding {
+            overflow: hidden;
+            width: 330px;
+            margin: 20px auto;
+            border: 5px solid #efefef;
+        }
+
+        .kotak {
+            float: left;
+            width: 110px;
+            height: 100px;
+            background-color: #189fff;
+        }
+
+        .jam-digital-malasngoding p {
+            color: #fff;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+
+    <center></center>
+    <center>
+        <script language="JavaScript">
+            var text = "MA'RUF TAI FUCEKKK:V";
+            var delay = 20;
+            var currentChar = 1;
+            var destination = "[none]";
+
+            function type() {
+                //if (document.all)
+                {
+                    var dest = document.getElementById(destination);
+                    if (dest) // && dest.innerHTML)
+                    {
+                        dest.innerHTML = text.substr(0, currentChar) + "<blink>_</blink>";
+                        currentChar++;
+                        if (currentChar > text.length) {
+                            currentChar = 1;
+                            setTimeout("type()", 5000);
+                        } else {
+                            setTimeout("type()", delay);
+                        }
+                    }
+                }
+            }
+
+            function startTyping(textParam, delayParam, destinationParam) {
+                text = textParam;
+                delay = delayParam;
+                currentChar = 1;
+                destination = destinationParam;
+                type();
+            }
+        </script> <b>
+            <div 0px="" 12px="" calibri="" color:="" ff0000="" font:="" id="textDestination" margin:=""
+                style="background-color: none;"></div>
+        </b>
+        <script language="JavaScript">
+            javascript: startTyping(text, 50, "textDestination");
+        </script>
+    </center>
+    <div class="jam-digital-malasngoding">
+        <div class="kotak">
+            <p id="jam"></p>
+        </div>
+        <div class="kotak">
+            <p id="menit"></p>
+        </div>
+        <div class="kotak">
+            <p id="detik"></p>
+        </div>
+    </div>
+
+    <center>
+        <a href="https://www.andrianputrapradhana.wordpress.com">VISIT</a>
+    </center>
+
+    <script>
+        window.setTimeout("waktu()", 1000);
+
+        function waktu() {
+            var waktu = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getSeconds();
+        }
+    </script>
+</body>
+
+</html>
